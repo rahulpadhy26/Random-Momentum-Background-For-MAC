@@ -6,14 +6,8 @@ from time import time
 t = time()
 
 # Some auxiliary operations
-momentum_backgrounds_9 = '/Users/rapadhy/Library/Application Support/Google/Chrome/Default/Extensions/laookkfknpbbblfpciffpaejjkokdgca/1.15.9_0/backgrounds/'
-momentum_backgrounds_10 = '/Users/rapadhy/Library/Application Support/Google/Chrome/Default/Extensions/laookkfknpbbblfpciffpaejjkokdgca/1.15.10_0/backgrounds/'
-val = choice([9, 10])
-if val == 9:
-    backgrounds_folder = momentum_backgrounds_9
-else:
-    backgrounds_folder = momentum_backgrounds_10
-files = os.listdir(backgrounds_folder)
+momentum_backgrounds = '<path-in-the-local-machine>'
+files = os.listdir(momentum_backgrounds)
 shuffle(files)
 num_files = len(files)
 file_index = randint(0, num_files-1)
